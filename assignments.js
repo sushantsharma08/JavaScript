@@ -29,8 +29,8 @@ console.log(language);
  console.log("my country's population more than findland's population");
 console.log("my country's population more than findland's population"+POPULATION > PopulationFinland);
 let AvgPopulation = 33;
-console.log("my country's population is less than avg population of country");
-console.log(POPULATION<AvgPopulation);
+console.log("my country's population is less than or equal to avg population of country");
+console.log(POPULATION<=AvgPopulation);
 let Description ='Portugal is in Europe, and its 11 million people speak portuguese';
 console.log(Description);
 //
