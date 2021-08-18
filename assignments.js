@@ -33,4 +33,14 @@ console.log("my country's population is less than or equal to avg population of 
 console.log(POPULATION<=AvgPopulation);
 let Description ='Portugal is in Europe, and its 11 million people speak portuguese';
 console.log(Description);
-//
+//challenge #1
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+const markBMI = markMass/(markHeight**2)
+const johnBMI = johnMass/johnHeight**2
+console.log(markBMI);
+console.log(johnBMI);
+const markHigherBMI = markBMI>johnBMI
+console.log(markHigherBMI);
