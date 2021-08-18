@@ -87,3 +87,16 @@ console.log(`mark's BMI (${markBMI})is less than john's BMI (${johnBMI})`);
 //example.1: console.log('i am '+45+' yrs old'); in '+' oprator the variables are always considered a string,so no need for qoutes(').
 //exampe.2 console.log('33'-'3'-'10'); in (-)oprator the variables are assigned number type variables so even if qoutes are there they are treated as Number.
 // other operators like (*) multiplication (/)division and other comparision operators like (<,>,<=,>=) act similar to substraction.
+
+
+//falsy values: those elements whose boolean values are false. 
+//these 5 elemnts obtain a false value : 0 ,( '' ) empty string , undefined , null , NaN;
+//example
+//truthy value : those elements whose boolean values are true.
+//generally all elements or variables having some kind of data are considered true 
+let money;
+format: if(money) {
+console.log(`good keep it up and improve`);
+} else{
+console.log(`get a job`);
+}
