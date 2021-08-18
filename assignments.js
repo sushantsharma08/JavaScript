@@ -79,3 +79,11 @@ console.log(`mark's BMI (${markBMI})is less than john's BMI (${johnBMI})`);
 } else{
     console.log(`mark's BMI (${markBMI})is higher than john's BMI (${johnBMI})`);
 }
+//type conversion
+//type needed to be set by defaut
+//example: consol.log(string(45),30); here the user has to declare that 45 is string variable type
+//*type coercion*
+//type JS sets by itself
+//example.1: console.log('i am '+45+' yrs old'); in '+' oprator the variables are always considered a string,so no need for qoutes(').
+//exampe.2 console.log('33'-'3'-'10'); in (-)oprator the variables are assigned number type variables so even if qoutes are there they are treated as Number.
+// other operators like (*) multiplication (/)division and other comparision operators like (<,>,<=,>=) act similar to substraction.
