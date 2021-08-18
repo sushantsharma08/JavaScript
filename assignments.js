@@ -48,3 +48,14 @@ console.log(markHigherBMI);
 //  1. using \n\ to break liness
 //  2. using ``(backtick) and typing as you waant it to be
 // *using ${variableName} makes it more easier to write for consol as no  need to add + sign repeatedly*
+// example for above data from below line
+ const mark = "mark" + " is " + markMass + "kgs " + "in weight " + "and is " + markHeight + " meters " + "in height."
+ console.log(mark);
+ const newMark =`mark is ${markMass}kgs in weight and is ${markHeight} meters in height.`
+ console.log(newMark);
+ //now for the same lines applying line break with the two different ways
+ console.log("string with multiple lines");
+ console.log("string with \n\multiple\n\lines");
+ console.log(`string with 
+multiple 
+lines`);
