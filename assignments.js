@@ -59,3 +59,23 @@ console.log(markHigherBMI);
  console.log(`string with 
 multiple 
 lines`);
+/*if/else for a driving license
+format: if() {
+
+} else{
+
+}*/
+const age = 18;
+if(age>=18) {
+ console.log(`sushant is eligible for driver's license`);
+ alert (`sushant is eligible for license`)
+} else{
+    const YearsLeft = 18-age;
+ console.log( `sushant is too young, wait ${YearsLeft} years`);
+}
+//challange #2
+if(markBMI<johnBMI) {
+console.log(`mark's BMI (${markBMI})is less than john's BMI (${johnBMI})`);
+} else{
+    console.log(`mark's BMI (${markBMI})is higher than john's BMI (${johnBMI})`);
+}
