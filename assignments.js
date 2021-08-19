@@ -100,3 +100,21 @@ console.log(`good keep it up and improve`);
 } else{
 console.log(`get a job`);
 }
+//equality operators == & ===
+// == is a coercion type operator and chooses variable type by itself.
+// whereas, === is a conversion type and variables need to be defined.
+//example for a favourite number :
+const favourite = prompt(`what is your favourite number?`);
+ console.log(favourite);
+ if(favourite == 8) {
+     console.log(`8 is a good number but considered string for now`);
+     console.log(typeof favourite);
+ } //this shows == is a loose operator and gets value even when type is not defined so (a string) '8'== (a number) 8
+  //now lets see for ===
+ favouriten = Number(prompt(`what is your favourite number?`));
+ console.log(favouriten);
+ if(favouriten === 8) {
+     console.log(`8 is a good number but considered as a number now`);
+     console.log(typeof favouriten);
+ } //now if you enter a value of string and compare with number it will give a false value ex: '8'===8 is a false 
+ //also here we defined the variable type by number() format before prompt
