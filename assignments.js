@@ -142,14 +142,38 @@ if (age>=18 && hasDriversLicense) {
 }
 //challange #3
 
-const DolphinsScore = Number(96+108+89);
-const KoalaScore = Number(88+91+110);
+// const DolphinsScore = (96+108+89);
+// const KoalaScore = (83+91+110);
+// const DolphinsavgScore = (96+108+89)/3;
+// const KoalaavgScore = (83+91+110)/3;
+// console.log(`total score for team dolphins : ${DolphinsScore}`);
+// console.log(`total score for team koala : ${KoalaScore}`);
+// console.log(`average score for team dolphins : ${DolphinsavgScore}`);
+// console.log(`average score for team koala : ${KoalaavgScore}`);
+// if (DolphinsavgScore === KoalaavgScore) {
+//     console.log(`Match is a draw!`);
+// } else if (DolphinsavgScore < KoalaavgScore){
+//     console.log(`team koala won the match by ${KoalaScore - DolphinsScore} points`);
+// } else if (DolphinsavgScore > KoalaavgScore){
+//     console.log(`team dolfins won by ${DolphinsScore - KoalaScore} points`);
+// }
+
+//bonus 1 and 2
+const DolphinsScore = (97+112+81);
+const KoalaScore = (109+95+86);
+const DolphinsavgScore = (97+112+81)/3;
+const KoalaavgScore = (109+95+86)/3;
 console.log(`total score for team dolphins : ${DolphinsScore}`);
 console.log(`total score for team koala : ${KoalaScore}`);
-if (DolphinsScore === KoalaScore) {
+console.log(`average score for team dolphins : ${DolphinsavgScore}`);
+console.log(`average score for team koala : ${KoalaavgScore}`);
+if (DolphinsavgScore === KoalaavgScore && DolphinsavgScore >= 100 && KoalaavgScore >= 100
+    ) {
     console.log(`Match is a draw!`);
-} else if (DolphinsScore < KoalaScore){
-    console.log(`team koala won the match!`);
-} else if (DolphinsScore > KoalaScore){
-    console.log(`team dolfins won!`);
+} else if (DolphinsavgScore < KoalaavgScore  && KoalaavgScore >= 100){
+    console.log(`team koala won the match by ${KoalaScore - DolphinsScore} points`);
+} else if (DolphinsavgScore > KoalaavgScore && DolphinsavgScore >= 100){
+    console.log(`team dolfins won by ${DolphinsScore - KoalaScore} points`);
+} else{
+ console.log(`no one won the match!`);
 }
