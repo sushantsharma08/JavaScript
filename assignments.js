@@ -158,7 +158,7 @@ if (age>=18 && hasDriversLicense) {
 //     console.log(`team dolfins won by ${DolphinsScore - KoalaScore} points`);
 // }
 
-//bonus 1 and 2
+//challange bonus 1&2
 const DolphinsScore = (97+112+81);
 const KoalaScore = (109+95+86);
 const DolphinsavgScore = (97+112+81)/3;
@@ -176,4 +176,49 @@ if (DolphinsavgScore === KoalaavgScore && DolphinsavgScore >= 100 && KoalaavgSco
     console.log(`team dolfins won by ${DolphinsScore - KoalaScore} points`);
 } else{
  console.log(`no one won the match!`);
+}
+//The Switch Statement
+const Day = 'saturday';
+switch (Day) {
+    case 'monday':
+        console.log(`college work.`);
+        console.log(`running`);
+        break;
+    case 'tuesday':
+        console.log(`coding on HTML!`);
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log(`code on CSS!`);
+        break;
+    case 'friday':
+        console.log(`learn JS!`);
+        break;
+    case 'saturday':
+        console.log(`code on JS!`);
+        break;
+    case 'sunday':
+        console.log(`rest biaatch`);
+        break;                   
+    default:
+        console.log(`wrong day!`);
+        break;
+}
+//now the same code as above but with if-elseif 
+ if (Day==='monday') {
+     console.log(`fuck you biaaatch`);
+ } else if(Day ==='tuesday') {
+        console.log(`tuesday is holiday`);
+ } else if (Day ==='wednessday') {
+     console.log(`wednessday is a holiday`);
+ } else if(Day ==='thursday') {
+    console.log(`thursday is holiday`);
+} else if(Day ==='friday') {
+    console.log(`friday is holiday`);
+} else if(Day ==='saturday') {
+    console.log(`saturday is holiday`);
+} else if(Day ==='sunday') {
+    console.log(`sunday is holiday`);
+} else{
+    console.log(`wrong day!`);
 }
