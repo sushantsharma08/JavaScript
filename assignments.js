@@ -121,15 +121,22 @@ const favourite = prompt(`what is your favourite number?`);
 
 
  //boolean value : truth table and concept of NOT
- /*when both true
+ /*when both true*/
  const hasDriversLicense = true;
  const hasGoodVision = true;
 
  console.log(hasDriversLicense && hasGoodVision); //it is AND should be true
- console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true*/
-/* when one is true one is false
-const hasDriversLicense = true;
-const hasGoodVision = false;
+ console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true
+ 
+//  when one is true one is false
+//     *** to make good vision false simply using ! (not) operator ***
 
-console.log(hasDriversLicense && hasGoodVision); //it is AND should be false
-console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true*/
+console.log(hasDriversLicense && !hasGoodVision); //it is AND should be false
+console.log(hasDriversLicense || !hasGoodVision); //it is OR and should be true
+
+
+if (age>=18 && hasDriversLicense) {
+    console.log(`sushant is eligible to drive`);
+} else {
+    console.log(`not eligible to drive`);
+}
