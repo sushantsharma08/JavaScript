@@ -117,4 +117,19 @@ const favourite = prompt(`what is your favourite number?`);
      console.log(`8 is a good number but considered as a number now`);
      console.log(typeof favouriten);
  } //now if you enter a value of string and compare with number it will give a false value ex: '8'===8 is a false 
- //also here we defined the variable type by number() format before prompt
+ //also here we defined the variable type by number() format before prompt.
+
+
+ //boolean value : truth table and concept of NOT
+ /*when both true
+ const hasDriversLicense = true;
+ const hasGoodVision = true;
+
+ console.log(hasDriversLicense && hasGoodVision); //it is AND should be true
+ console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true*/
+/* when one is true one is false
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision); //it is AND should be false
+console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true*/
