@@ -140,3 +140,16 @@ if (age>=18 && hasDriversLicense) {
 } else {
     console.log(`not eligible to drive`);
 }
+//challange #3
+
+const DolphinsScore = Number(96+108+89);
+const KoalaScore = Number(88+91+110);
+console.log(`total score for team dolphins : ${DolphinsScore}`);
+console.log(`total score for team koala : ${KoalaScore}`);
+if (DolphinsScore === KoalaScore) {
+    console.log(`Match is a draw!`);
+} else if (DolphinsScore < KoalaScore){
+    console.log(`team koala won the match!`);
+} else if (DolphinsScore > KoalaScore){
+    console.log(`team dolfins won!`);
+}
