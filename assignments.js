@@ -224,4 +224,11 @@ if (Day === 'monday') {
     console.log(`wrong day!`);
 }
 //statements and expressions
-s
+//  conditional operators or ternary operator
+//  ? this is if
+//  : this is else
+// format -  condition ? console.log() : console.log();
+// this format acts as a expression so you can also put it in templet literals. 
+age>=18 ? console.log(`i like to drink wine🙌`) :
+console.log(`i like water`);
+console.log(`I am sushant and ${age>=18 ? `i like to drink wine🙌` : `i like water`}`);
