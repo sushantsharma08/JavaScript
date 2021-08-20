@@ -232,3 +232,27 @@ if (Day === 'monday') {
 age>=18 ? console.log(`i like to drink wine🙌`) :
 console.log(`i like water`);
 console.log(`I am sushant and ${age>=18 ? `i like to drink wine🙌` : `i like water`}`);
+
+
+// challange #4
+// first by if else
+const bill = 40
+;
+let tip;
+if (bill <= 50)  {
+    console.log(` the tip is ${tip = bill * (20/100)}`);
+} else if (bill >50 && bill <300) {
+    console.log(`the tip is ${ tip = bill * (15/100)}`);
+} else if (bill >=300){
+    console.log(` the tip is ${tip = bill * (20/100)}`);
+}
+const totalBill = Number(bill + tip)
+console.log(` the total bill is ${totalBill}`);
+console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${totalBill}`);
+
+//now with the conditional operator.
+console.log(`the bill was ${bill}`);
+// let tip;
+bill >= 50 && bill<=300 ? tip = bill *(15/100) : tip = bill * (20/100);
+console.log(`the tip was ${tip}`);
+console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${totalBill}`);
