@@ -49,14 +49,14 @@ console.log(markHigherBMI);
 //  2. using ``(backtick) and typing as you waant it to be
 // *using ${variableName} makes it more easier to write for consol as no  need to add + sign repeatedly*
 // example for above data from below line
- const mark = "mark" + " is " + markMass + "kgs " + "in weight " + "and is " + markHeight + " meters " + "in height."
- console.log(mark);
- const newMark =`mark is ${markMass}kgs in weight and is ${markHeight} meters in height.`
- console.log(newMark);
- //now for the same lines applying line break with the two different ways
- console.log("string with multiple lines");
- console.log("string with \n\multiple\n\lines");
- console.log(`string with 
+const mark = "mark" + " is " + markMass + "kgs " + "in weight " + "and is " + markHeight + " meters " + "in height."
+console.log(mark);
+const newMark = `mark is ${markMass}kgs in weight and is ${markHeight} meters in height.`
+console.log(newMark);
+//now for the same lines applying line break with the two different ways
+console.log("string with multiple lines");
+console.log("string with \n\multiple\n\lines");
+console.log(`string with 
 multiple 
 lines`);
 /*if/else for a driving license
@@ -66,17 +66,17 @@ format: if() {
 
 }*/
 const age = 18;
-if(age>=18) {
- console.log(`sushant is eligible for driver's license`);
- alert (`sushant is eligible for license`)
-} else{
-    const YearsLeft = 18-age;
- console.log( `sushant is too young, wait ${YearsLeft} years`);
+if (age >= 18) {
+    console.log(`sushant is eligible for driver's license`);
+    alert(`sushant is eligible for license`)
+} else {
+    const YearsLeft = 18 - age;
+    console.log(`sushant is too young, wait ${YearsLeft} years`);
 }
 //challange #2
-if(markBMI<johnBMI) {
-console.log(`mark's BMI (${markBMI})is less than john's BMI (${johnBMI})`);
-} else{
+if (markBMI < johnBMI) {
+    console.log(`mark's BMI (${markBMI})is less than john's BMI (${johnBMI})`);
+} else {
     console.log(`mark's BMI (${markBMI})is higher than john's BMI (${johnBMI})`);
 }
 //type conversion
@@ -95,39 +95,39 @@ console.log(`mark's BMI (${markBMI})is less than john's BMI (${johnBMI})`);
 //truthy value : those elements whose boolean values are true.
 //generally all elements or variables having some kind of data are considered true 
 let money;
-format: if(money) {
-console.log(`good keep it up and improve`);
-} else{
-console.log(`get a job`);
+format: if (money) {
+    console.log(`good keep it up and improve`);
+} else {
+    console.log(`get a job`);
 }
 //equality operators == & ===
 // == is a coercion type operator and chooses variable type by itself.
 // whereas, === is a conversion type and variables need to be defined.
 //example for a favourite number :
 const favourite = prompt(`what is your favourite number?`);
- console.log(favourite);
- if(favourite == 8) {
-     console.log(`8 is a good number but considered string for now`);
-     console.log(typeof favourite);
- } //this shows == is a loose operator and gets value even when type is not defined so (a string) '8'== (a number) 8
-  //now lets see for ===
- favouriten = Number(prompt(`what is your favourite number?`));
- console.log(favouriten);
- if(favouriten === 8) {
-     console.log(`8 is a good number but considered as a number now`);
-     console.log(typeof favouriten);
- } //now if you enter a value of string and compare with number it will give a false value ex: '8'===8 is a false 
- //also here we defined the variable type by number() format before prompt.
+console.log(favourite);
+if (favourite == 8) {
+    console.log(`8 is a good number but considered string for now`);
+    console.log(typeof favourite);
+} //this shows == is a loose operator and gets value even when type is not defined so (a string) '8'== (a number) 8
+//now lets see for ===
+favouriten = Number(prompt(`what is your favourite number?`));
+console.log(favouriten);
+if (favouriten === 8) {
+    console.log(`8 is a good number but considered as a number now`);
+    console.log(typeof favouriten);
+} //now if you enter a value of string and compare with number it will give a false value ex: '8'===8 is a false 
+//also here we defined the variable type by number() format before prompt.
 
 
- //boolean value : truth table and concept of NOT
- /*when both true*/
- const hasDriversLicense = true;
- const hasGoodVision = true;
+//boolean value : truth table and concept of NOT
+/*when both true*/
+const hasDriversLicense = true;
+const hasGoodVision = true;
 
- console.log(hasDriversLicense && hasGoodVision); //it is AND should be true
- console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true
- 
+console.log(hasDriversLicense && hasGoodVision); //it is AND should be true
+console.log(hasDriversLicense || hasGoodVision); //it is OR and should be true
+
 //  when one is true one is false
 //     *** to make good vision false simply using ! (not) operator ***
 
@@ -135,7 +135,7 @@ console.log(hasDriversLicense && !hasGoodVision); //it is AND should be false
 console.log(hasDriversLicense || !hasGoodVision); //it is OR and should be true
 
 
-if (age>=18 && hasDriversLicense) {
+if (age >= 18 && hasDriversLicense) {
     console.log(`sushant is eligible to drive`);
 } else {
     console.log(`not eligible to drive`);
@@ -159,26 +159,26 @@ if (age>=18 && hasDriversLicense) {
 // }
 
 //challange bonus 1&2
-const DolphinsScore = (97+112+81);
-const KoalaScore = (109+95+86);
-const DolphinsavgScore = (97+112+81)/3;
-const KoalaavgScore = (109+95+86)/3;
+const DolphinsScore = (97 + 112 + 81);
+const KoalaScore = (109 + 95 + 86);
+const DolphinsavgScore = (97 + 112 + 81) / 3;
+const KoalaavgScore = (109 + 95 + 86) / 3;
 console.log(`total score for team dolphins : ${DolphinsScore}`);
 console.log(`total score for team koala : ${KoalaScore}`);
 console.log(`average score for team dolphins : ${DolphinsavgScore}`);
 console.log(`average score for team koala : ${KoalaavgScore}`);
 if (DolphinsavgScore === KoalaavgScore && DolphinsavgScore >= 100 && KoalaavgScore >= 100
-    ) {
+) {
     console.log(`Match is a draw!`);
-} else if (DolphinsavgScore < KoalaavgScore  && KoalaavgScore >= 100){
+} else if (DolphinsavgScore < KoalaavgScore && KoalaavgScore >= 100) {
     console.log(`team koala won the match by ${KoalaScore - DolphinsScore} points`);
-} else if (DolphinsavgScore > KoalaavgScore && DolphinsavgScore >= 100){
+} else if (DolphinsavgScore > KoalaavgScore && DolphinsavgScore >= 100) {
     console.log(`team dolfins won by ${DolphinsScore - KoalaScore} points`);
-} else{
- console.log(`no one won the match!`);
+} else {
+    console.log(`no one won the match!`);
 }
 //The Switch Statement
-const Day = 'saturday';
+const Day = 'thursday';
 switch (Day) {
     case 'monday':
         console.log(`college work.`);
@@ -199,26 +199,29 @@ switch (Day) {
         break;
     case 'sunday':
         console.log(`rest biaatch`);
-        break;                   
+        break;
     default:
         console.log(`wrong day!`);
         break;
 }
+
 //now the same code as above but with if-elseif 
- if (Day==='monday') {
-     console.log(`fuck you biaaatch`);
- } else if(Day ==='tuesday') {
-        console.log(`tuesday is holiday`);
- } else if (Day ==='wednessday') {
-     console.log(`wednessday is a holiday`);
- } else if(Day ==='thursday') {
+if (Day === 'monday') {
+    console.log(`fuck you biaaatch`);
+} else if (Day === 'tuesday') {
+    console.log(`tuesday is holiday`);
+} else if (Day === 'wednesday' || 'thursday') {
+    console.log(`wednessday/thursday is a holiday`);
+} else if (Day === 'thursday') {
     console.log(`thursday is holiday`);
-} else if(Day ==='friday') {
+} else if (Day === 'friday') {
     console.log(`friday is holiday`);
-} else if(Day ==='saturday') {
+} else if (Day === 'saturday') {
     console.log(`saturday is holiday`);
-} else if(Day ==='sunday') {
+} else if (Day === 'sunday') {
     console.log(`sunday is holiday`);
-} else{
+} else {
     console.log(`wrong day!`);
 }
+//statements and expressions
+s
