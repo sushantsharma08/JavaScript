@@ -256,3 +256,6 @@ console.log(`the bill was ${bill}`);
 bill >= 50 && bill<=300 ? tip = bill *(15/100) : tip = bill * (20/100);
 console.log(`the tip was ${tip}`);
 console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${totalBill}`);
+// more efficient tip code
+const tip1 = bill >= 50 && bill<=300 ? bill *(15/100) : bill * (20/100);
+console.log(tip1);
