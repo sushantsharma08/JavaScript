@@ -10,8 +10,12 @@ logg();
 
 //example
 function fruitprocessor(apples,oranges) {
-    console.log(apples,oranges);
+    // console.log(apples,oranges);   to show how many items used.
     const juice = `juice with ${apples} apples and ${oranges} oranges.`;
-    return 0;
+    return juice;
 }
-fruitprocessor(5,0)
+const applejuice = fruitprocessor(5,0);
+console.log(applejuice);
+
+const appleorangejuice = fruitprocessor(2,2);
+console.log(appleorangejuice);
