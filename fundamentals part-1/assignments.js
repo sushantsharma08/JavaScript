@@ -261,5 +261,5 @@ const tip1 = bill >= 50 && bill<=300 ? bill *(15/100) : bill * (20/100);
 console.log(tip1);
 const pet = prompt( `do you have a pet?`);
 console.log(`do you have a pet = ${pet}`);
-pet = true ? console.log(`its cheems!`) : console.log(`no pet!`);
+pet = true ? /*console.log(`its cheems!`) */alert(" congrats its cheems!:-D") : console.log(`no pet!`);
  
