@@ -37,4 +37,12 @@ const age2 = calcage2(2001);
 // console.log(age2);
 
 console.log(age1,age2);
-//
+
+//arrow function
+const yearsUntilRetirement = (birthYear,Firstname) =>
+{
+const age = 2021-birthYear;
+const retirement = 60-age;
+return `${Firstname} retires in ${retirement} years`;
+}
+console.log(yearsUntilRetirement(2002,'sushant'));
