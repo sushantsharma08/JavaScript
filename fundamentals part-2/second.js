@@ -27,11 +27,14 @@ function calcAge1(birthYear) {
     return 2021-birthYear;
 }
 const age1 = calcAge1(2002);
-console.log(age1);
+// console.log(age1);
 
 // 2. function expression
 const calcage2 = function (birthYear) {
     return 2021-birthYear
 }
 const age2 = calcage2(2001);
-console.log(age2);
+// console.log(age2);
+
+console.log(age1,age2);
+//
