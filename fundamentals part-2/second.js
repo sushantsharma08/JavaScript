@@ -55,7 +55,7 @@ function cutFruitPieces(fruit) {
 //second function
 function fruitprocessor(apples,oranges) {
     const applepieces = cutFruitPieces(apples);
-    const orangepieces = cutFruitPieces(oranges);
+    const orangepieces = cutFruitPieces(oranges); 
     return `juice with ${applepieces} pieces of apples and ${orangepieces} pieces of oranges`
 }
 console.log(fruitprocessor(2,3)); 
