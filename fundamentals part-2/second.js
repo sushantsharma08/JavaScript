@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 //functions
 function logg() {
@@ -57,4 +57,4 @@ function fruitprocessor(apples, oranges) {
     const orangepieces = cutFruitPieces(oranges);
     return `juice with ${applepieces} pieces of apples and ${orangepieces} pieces of oranges`
 }
-console.log(fruitprocessor(2, 3));
+console.log(fruitprocessor(2, 3));  
