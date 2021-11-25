@@ -263,4 +263,8 @@ const pet = prompt( `do you have a pet? press Y for yes and N for no.`);
 console.log(`do you have a pet = ${pet}`);
 pet == 'Y'|| pet == 'y' ? /*console.log(`its cheems!`) */alert(" congrats its cheems!:-D") : console.log(`no pet!`);
  
- 
+ // typeof
+ let Name = "sushant"
+console.log(Name);
+console.log(typeof Name);
+
