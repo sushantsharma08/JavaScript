@@ -268,4 +268,12 @@ pet == 'Y'|| pet == 'y' ? /*console.log(`its cheems!`) */alert(" congrats its ch
 console.log(Name);
 console.log(typeof Name);
 console.log(Name + " " + Name + Name);
-console.log(`I am ${Name} `);
+console.log(`I am ${Name}`);
+
+const AgeForCentury = prompt(`ENter your birthyear !`);
+if(AgeForCentury>=2000){
+    alert(`you were born in 21st century`);
+}
+else{
+    alert(`you were born in 19th century`);
+}
