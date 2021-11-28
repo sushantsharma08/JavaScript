@@ -268,3 +268,4 @@ pet == 'Y'|| pet == 'y' ? /*console.log(`its cheems!`) */alert(" congrats its ch
 console.log(Name);
 console.log(typeof Name);
 console.log(Name + " " + Name + Name);
+console.log(`I am ${Name} `);
