@@ -280,3 +280,6 @@ else{
 //string and templpate literal
 console.log(`this is a string..!`);
 console.log(`string with template literal : my name is ${Name}`);
+
+let FavNum = prompt(`Enter your fav. number`);
+console.log(`entered number is : ${FavNum}`);
