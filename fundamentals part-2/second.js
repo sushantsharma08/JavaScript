@@ -58,3 +58,13 @@ function fruitprocessor(apples, oranges) {
     return `juice with ${applepieces} pieces of apples and ${orangepieces} pieces of oranges.`
 }
 console.log(fruitprocessor(23, 5));  
+
+const FiveTimes = function (Num){
+    return Num*5;
+};
+
+const Number = function (NoFruits){
+    const Five = FiveTimes(NoFruits);
+    return ` total number of fruits become ${Five}`;
+};
+console.log(Number(8));
