@@ -68,3 +68,31 @@ const Number = function (NoFruits){
     return ` total number of fruits become ${Five}`;
 };
 console.log(Number(8));
+
+// coding challange 1
+
+function calcAverage(score1,score2,score3){
+  let result = (score1 + score2 + score3)/3;
+   return result;
+};
+
+const checkWinner = function (avgKoalas,avgDolphines) {
+    if(avgDolphines >= 2* avgKoalas){
+        console.log(`dolphines win`);
+    }else if (avgKoalas >= 2* avgDolphines){
+        console.log(`koalas win`);
+    }else{
+        console.log(`nobody won!`);
+    }
+};
+ //test 1
+let Dolphines = calcAverage(85,54,41);
+let koalas = calcAverage(23,34,27);
+console.log(Dolphines, koalas);
+checkWinner(koalas, Dolphines);
+
+// test 2
+ Dolphines = calcAverage(44,23,71);
+ koalas = calcAverage(65,54,49);
+console.log(Dolphines, koalas);
+checkWinner(koalas, Dolphines);
