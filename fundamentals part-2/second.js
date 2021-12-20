@@ -96,3 +96,4 @@ checkWinner(koalas, Dolphines);
  koalas = calcAverage(65,54,49);
 console.log(Dolphines, koalas);
 checkWinner(koalas, Dolphines);
+
