@@ -119,4 +119,21 @@ friends.push('name5');
 console.log(friends);
 //unshift -->adds element to the start of the array
 friends.unshift('name6')
-console.log(friends)
+console.log(friends);
+
+//to delete OR remove elements
+//pop --> removes elements from the start of the array
+friends.pop();
+console.log(friends);
+//shift --> removes element from start of the array
+friends.shift();
+console.log(friends);
+
+// indexof --> provides location of element in the array and if not present returns -1.
+console.log(friends.indexOf('name1'));
+console.log(friends.indexOf('name11'));
+
+//includes --> checks if the array contains the element or not.
+console.log(friends.includes('name1'));
+console.log(friends.includes('name11'));
+
