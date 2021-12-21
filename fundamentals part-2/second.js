@@ -97,3 +97,26 @@ checkWinner(koalas, Dolphines);
 console.log(Dolphines, koalas);
 checkWinner(koalas, Dolphines);
 
+
+//array
+
+
+const friends = ['name1','name2','name3'];
+console.log(friends);
+
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+friends[2]='name4';
+console.log(friends);
+
+//functions OR operators on arrays
+
+//to add elements
+//push --> adds elemets to the end of the array
+friends.push('name5');
+console.log(friends);
+//unshift -->adds element to the start of the array
+friends.unshift('name6')
+console.log(friends)
