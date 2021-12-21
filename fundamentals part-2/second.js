@@ -137,3 +137,26 @@ console.log(friends.indexOf('name11'));
 console.log(friends.includes('name1'));
 console.log(friends.includes('name11'));
 
+// challange 2
+
+//by functions
+function tipFor(tip){
+    if (tip>50 && tip<300) {
+       let total;
+       total = tip*.15;
+       return total;
+    }else{
+      let total= tip*.2;
+        return total;
+    }
+    
+};
+// const Tip = calcTiptipFor(400);
+// console.log(`tip is ${Tip}`);
+
+// array
+
+const bills = [125,555,44];
+
+const tip =[tipFor(bills[0]),tipFor(bills[1]),tipFor(bills[2])];
+console.log(tip);
