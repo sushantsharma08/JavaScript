@@ -160,3 +160,31 @@ const bills = [125,555,44];
 
 const tip =[tipFor(bills[0]),tipFor(bills[1]),tipFor(bills[2])];
 console.log(tip);
+
+//objects  -->making an object named sushant
+
+const sushant = {
+    firstName : 'Sushant',
+    lastName : 'Sharma',
+    Age : 2021-2002,
+    job : 'student',
+    friends : [ 'name1','name2','name3' ]
+};
+
+// calling info by keywords
+
+//dot meathod
+console.log(sushant.firstName);
+
+//bracket meathod
+console.log(sushant['lastName']);
+
+// adding info by making new keywords
+
+//dot meathod
+sushant.location= 'India';
+console.log(sushant.location);
+
+//bracket meathod
+sushant['insta'] = 'sushant_sharma02';
+console.log(sushant.insta);
