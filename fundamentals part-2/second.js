@@ -168,7 +168,8 @@ const sushant = {
     lastName : 'Sharma',
     Age : 2021-2002,
     job : 'student',
-    friends : [ 'name1','name2','name3' ]
+    friends : [ 'name1','name2','name3' ],
+    hasDriversLicence : true,
 };
 
 // calling info by keywords
@@ -188,3 +189,105 @@ console.log(sushant.location);
 //bracket meathod
 sushant['insta'] = 'sushant_sharma02';
 console.log(sushant.insta);
+
+//object meathod : this.
+
+//making a function to calc age without this.
+
+// const name = {
+//     firstName : 'n1',
+//     lastName : 'nL',
+//     birthyear : 2002,
+//     job : 'student',
+//     friends : [ 'name1','name2','name3' ],
+
+//      calculateAge : function (birthyear) {
+//         const result = 2021-birthyear;
+//          return result;
+//      }
+// };
+// console.log(name.calculateAge(2002));
+
+// here we had to give the birthyear and it can be wrong if not given carefully. so we now use this keyword to take birthyear from object itself
+
+
+// const name = {
+//     firstName : 'n1',
+//     lastName : 'nL',
+//     birthyear : 2002,
+//     job : 'student',
+//     friends : [ 'name1','name2','name3' ],
+
+//      calculateAge : function () {
+//         const result = 2021-this.birthyear;
+//          return result;
+//      }
+// };
+// console.log(name.calculateAge());
+
+// here we used this keyword and did the job without giving birthyear again.
+
+// now we will make a new variable named age inside the object itself using this keyword for age.
+
+const name = {
+    firstName : 'n1',
+    lastName : 'nL',
+    birthyear : 2002,
+    job : 'student',
+    friends : [ 'name1','name2','name3' ],
+
+     calculateAge : function () {
+        this.Age = 2021-this.birthyear;
+         return;
+     }
+};
+console.log(name.calculateAge());
+console.log(name.Age);
+// here we made a new variable inside the object itself using 
+
+//challange
+//sushant is a 19 year old boy who has a/no drivers licence.
+const challange = {
+    firstName : 'Sushant',
+    lastName : 'Sharma',
+    Age : 2021-2002,
+    job : 'student',
+    friends : [ 'name1','name2','name3' ],
+    hasDriversLicence : false,
+
+    getSummary : function() {
+        return `${this.firstName} is a ${this.Age} year old ${this.job} who ${this.hasDriversLicence ? `has a drivers licence` : `has no drivers licence`}`
+    }
+};
+ console.log(challange.getSummary());
+
+ // challange //#3
+ 
+ const john = {
+     fullName : 'john smith',
+     Height : 1.69,
+     Mass : 78,
+
+     calcBmi : function(){
+            this.BMI = this.Mass/(this.Height*this.Height);
+            return ; 
+     }
+ };
+
+ 
+ const mark = {
+     fullName : 'Mark Miller',
+     Height : 1.95,
+     Mass : 92,
+     
+     calcBmi : function(){
+         this.BMI = this.Mass/(this.Height*this.Height);
+         return ; 
+        }
+    };
+
+
+    console.log(mark.calcBmi());
+    console.log(`BMI of ${mark.fullName} is ${mark.BMI}`);
+    console.log(john.calcBmi());
+    console.log(`BMI of ${john.fullName} is ${john.BMI}`);
