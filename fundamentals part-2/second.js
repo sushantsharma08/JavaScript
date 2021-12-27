@@ -140,28 +140,28 @@ console.log(friends.includes('name11'));
 // challange 2
 
 //by functions
-function tipFor(tip){
-    if (tip>50 && tip<300) {
-       let total;
-       total = tip*.15;
-       return total;
-    }else{
-      let total= tip*.2;
-        return total;
-    }
+// const calcTip = function tipFor(tip){
+//     if (tip>50 && tip<300) {
+//        let total;
+//        total = tip*.15;
+//        return total;
+//     }else{
+//       let total= tip*.2;
+//         return total;
+//     }
     
-};
+// };
 // const Tip = calcTiptipFor(400);
 // console.log(`tip is ${Tip}`);
 
 // array
 
-const bills = [125,555,44];
+// const bills = [125,555,44];
 
-const tip =[tipFor(bills[0]),tipFor(bills[1]),tipFor(bills[2])];
-console.log(tip);
+// const tip =[tipFor(bills[0]),tipFor(bills[1]),tipFor(bills[2])];
+// console.log(tip);
 
-//objects  -->making an object named sushant
+// //objects  -->making an object named sushant
 
 const sushant = {
     firstName : 'Sushant',
@@ -341,3 +341,28 @@ console.log(`<--- BREAKS AT NUMBER --->`);
         
     };
 
+  // challange 4
+   const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+   const tips = [];
+   const total = [];
+
+   
+   const calcTip = function(tip){
+    if (tip>50 && tip<300) {
+       let total;
+       total = tip*.15;
+       return total;
+    }else{
+      let total= tip*.2;
+        return total;
+    }
+    
+};
+
+   for (let i = 0; i < bill.length; i++) {
+
+       tips.push(calcTip(bill[i]));
+       total.push(bill[i]+tips[i]);
+   };
+   console.log(tips);
+   console.log(total);
