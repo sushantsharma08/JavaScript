@@ -291,3 +291,53 @@ const challange = {
     console.log(`BMI of ${mark.fullName} is ${mark.BMI}`);
     console.log(john.calcBmi());
     console.log(`BMI of ${john.fullName} is ${john.BMI}`);
+
+
+    // itterations 
+    //for loop
+    for( let rep = 1; rep<=10 ; rep++){
+        console.log(`dumbell count ${rep}`);
+    }
+
+    // now logging whole array to 
+    // first making a array 
+    const SushantArray = [
+        'Sushant',
+        'sharma',
+        2021-2002,
+        'student'
+    ];
+
+    for( let i=0 ; i<SushantArray.length ; i++){
+        console.log(SushantArray[i] , typeof SushantArray[i]);
+    };
+
+    // make a array named years and a empty array named ages and store calculated ages into this array using loops
+
+    const years = [1999,2000,2001,2002,2003];
+    const age = [];
+
+    for (let i = 0; i < years.length; i++) {
+            // age[i] = (2021 - years[i]); or you can use push
+            age.push(2021-years[i]);  
+            console.log(years[i],age[i]);     
+    };
+    console.log(years);
+    console.log(age);
+
+
+    // continue And break statements
+console.log(`<--- ONLY STRING --->`);
+for (let i = 0; i < SushantArray.length; i++) {
+    if (typeof SushantArray[i] !== 'string') continue;
+    console.log(SushantArray[i] , typeof SushantArray[i]);
+    
+};
+
+console.log(`<--- BREAKS AT NUMBER --->`);
+    for (let i = 0; i < SushantArray.length; i++) {
+        if (typeof SushantArray[i] === 'number') break;
+        console.log(SushantArray[i] , typeof SushantArray[i]);
+        
+    };
+
