@@ -12,7 +12,7 @@
 
 let number = Math.trunc(Math.random()*20)+1;
 let score = 20;
-
+let highScore = 0;
 
 
 document.querySelector('.check').addEventListener('click' , function () {
@@ -30,6 +30,11 @@ document.querySelector('.check').addEventListener('click' , function () {
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '30rem';
         document.querySelector('.number').textContent = number;
+
+        if (score>highScore) {
+            highScore = score;
+            document.querySelector('.highscore').textContent = highScore;
+        }
 
     // number too high
     }else if (guess>number) {
@@ -60,7 +65,7 @@ document.querySelector('.check').addEventListener('click' , function () {
     }
 });
 
-// challange 1   --> to restore the page using again button;
+// challenge 1   --> to restore the page using again button;
 
 document.querySelector('.again').addEventListener('click', function(){
     score = 20;
@@ -73,4 +78,5 @@ document.querySelector('.again').addEventListener('click', function(){
     document.querySelector('.guess').value = '';
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.width = '15rem';
-})
+});
+
