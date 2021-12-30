@@ -36,34 +36,47 @@ document.querySelector('.check').addEventListener('click' , function () {
             document.querySelector('.highscore').textContent = highScore;
         }
 
-    // number too high
-    }else if (guess>number) {
-
-            if(score>1){
-
-                document.querySelector('.message').textContent = 'too high';
-                score--;
-                document.querySelector('.score').textContent = score;
-            }else{
-                document.querySelector('.message').textContent = 'you lost the game';
-                document.querySelector('.score').textContent = 0;
-            }
-
-    // number too low
-    }else if (guess<number) {
-
+    }else if(guess !== number) {
         if(score>1){
-
-            document.querySelector('.message').textContent = 'too low';
+            
+            document.querySelector('.message').textContent = guess > number ? 'too high' : 'too low';
             score--;
             document.querySelector('.score').textContent = score;
         }else{
             document.querySelector('.message').textContent = 'you lost the game';
             document.querySelector('.score').textContent = 0;
         }
-        
     }
 });
+    
+    // number too high
+//     else if (guess>number) {
+
+//             if(score>1){
+
+//                 document.querySelector('.message').textContent = 'too high';
+//                 score--;
+//                 document.querySelector('.score').textContent = score;
+//             }else{
+//                 document.querySelector('.message').textContent = 'you lost the game';
+//                 document.querySelector('.score').textContent = 0;
+//             }
+
+//     // number too low
+//     }else if (guess<number) {
+
+//         if(score>1){
+
+//             document.querySelector('.message').textContent = 'too low';
+//             score--;
+//             document.querySelector('.score').textContent = score;
+//         }else{
+//             document.querySelector('.message').textContent = 'you lost the game';
+//             document.querySelector('.score').textContent = 0;
+//         }
+        
+//     }
+// });
 
 // challenge 1   --> to restore the page using again button;
 
