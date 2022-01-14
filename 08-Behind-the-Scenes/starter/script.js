@@ -15,9 +15,16 @@ function calcAge(birthYear){
             millenial= false
             const str2 = `oh, you are not a millenial,${firstName}`;
             console.log(str2);
+            console.log(age);
         }
         // console.log(str);
         console.log(`millenial : ${millenial}`);
+
+        function second() {
+            console.log(millenial);
+            // console.log(str2);  //refference error
+        }
+        second();
     }
     printAge();
 
