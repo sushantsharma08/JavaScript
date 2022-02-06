@@ -34,29 +34,44 @@
 // const firstName= "sushant"
 // calcAge(2002);
 
-console.log(me);
-// console.log(name);
-// console.log(age);
+// console.log(me);
+// // console.log(name);
+// // console.log(age);
 
-var me = 'me';
-let name = 'sushant';
-const age = '19';
+// var me = 'me';
+// let name = 'sushant';
+// const age = '19';
 
-//functions 
+// //functions 
 
-console.log(addDecl(5,6));
-// console.log(addExp(9,0));
-console.log(ArrowAdd(8,8));
+// console.log(addDecl(5,6));
+// // console.log(addExp(9,0));
+// console.log(ArrowAdd(8,8));
 
-// function declaration
-function addDecl(a,b){
-    return a+b;
+// // function declaration
+// function addDecl(a,b){
+//     return a+b;
+// };
+
+// //function expression
+// const addExp = function(a,b){
+//     return a+b;
+// }
+
+// // Arrow function
+// const ArrowAdd = (a,b) => a+b;
+
+console.log(this);
+
+const age = function(birthYear){
+    console.log(2022-birthYear);
+    console.log(this);
 };
+age(2002);
 
-//function expression
-const addExp = function(a,b){
-    return a+b;
-}
 
-// Arrow function
-const ArrowAdd = (a,b) => a+b;
+const ageArrow = birthYear =>{
+    console.log(2022-birthYear);
+    console.log(this);
+};
+ageArrow(2001);
