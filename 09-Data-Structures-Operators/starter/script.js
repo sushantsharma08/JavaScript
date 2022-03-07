@@ -33,3 +33,12 @@ const restaurant = {
  const [x,y,z] = arr;
 
  console.log(x, y, z);
+
+//  skipping a element in btw
+ let [a, ,b] = arr;
+ console.log(a,b);
+
+//  switching values 
+
+[a, b] = [b, a];
+console.log(a,b);
