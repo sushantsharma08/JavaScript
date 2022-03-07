@@ -28,7 +28,7 @@ const restaurant = {
   },
 };
 
-
+// array desructuring
  const arr = [2,3,4];
  const [x,y,z] = arr;
 
@@ -39,6 +39,12 @@ const restaurant = {
  console.log(a,b);
 
 //  switching values 
-
 [a, b] = [b, a];
 console.log(a,b);
+
+// object destructuring
+
+
+// calling objects meathods
+const {categories, openingHours}= restaurant;
+console.log(categories, openingHours);
