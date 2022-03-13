@@ -46,5 +46,13 @@ console.log(a,b);
 
 
 // calling objects meathods
-const {categories, openingHours}= restaurant;
-console.log(categories, openingHours);
+const {name ,categories, openingHours}= restaurant;
+console.log(name,categories, openingHours);
+
+const{
+  name : restrauntname,
+  categories : tag,
+  openingHours: hours,
+} = restaurant;
+
+console.log(restrauntname , tag , hours);
