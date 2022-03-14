@@ -56,3 +56,8 @@ const{
 } = restaurant;
 
 console.log(restrauntname , tag , hours);
+
+// providing with default data
+
+const{menu = [] , starterMenu : starters =[]} = restaurant;
+console.log(menu , starters);
