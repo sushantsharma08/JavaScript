@@ -58,6 +58,14 @@ const{
 console.log(restrauntname , tag , hours);
 
 // providing with default data
-
+// when data is not hard coded
 const{menu = [] , starterMenu : starters =[]} = restaurant;
 console.log(menu , starters);
+
+//mutating variables
+let l = 10;
+let m = 20;
+const obj = {l:40 , m:90, n:35};
+
+({l,m}=obj);
+console.log(l,m);
