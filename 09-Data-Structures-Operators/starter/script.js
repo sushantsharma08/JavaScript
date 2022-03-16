@@ -69,3 +69,12 @@ const obj = {l:40 , m:90, n:35};
 
 ({l,m}=obj);
 console.log(l,m);
+
+// nested objects
+// getting opening times on friday for the restraunt
+
+const {
+  fri : {open ,close}
+} = openingHours;
+
+console.log(open, close);
