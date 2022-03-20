@@ -26,6 +26,9 @@ const restaurant = {
       close: 24,
     },
   },
+  order : function (starterIndex, mainIndex){
+      return [this.mainMenu[starterIndex] , this.mainMenu[mainIndex]];
+  },
 };
 
 // array desructuring
