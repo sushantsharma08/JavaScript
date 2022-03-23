@@ -27,9 +27,19 @@ const restaurant = {
     },
   },
   order : function (starterIndex, mainIndex){
-      return [this.mainMenu[starterIndex] , this.mainMenu[mainIndex]];
+      return [this.starterMenu[starterIndex] , this.mainMenu[mainIndex]];
   },
+  orderDelivery : function (obj){
+    console.log(obj);
+  }
 };
+
+restaurant.orderDelivery({
+  time: '22:30',
+  address : "22 ab road",
+  mainIndex:2,
+  starterIndex:2,
+});
 
 // array desructuring
  const arr = [2,3,4];
