@@ -95,3 +95,17 @@ const {
 } =   openingHours;
 
 console.log(o, c);
+
+// SPREAD operator (...)
+
+const array1 = [1,2,3,4,5,6];
+const array2 = [7,8,9,0];
+console.log(...array1);
+const modifiedArray = [...array1 , 7];
+console.log(modifiedArray);
+const addedArray = [...array1 , ...array2];
+console.log(addedArray);
+
+const str = "Sushant";
+console.log(str);  //printing string
+console.log(...str); // printing elements of strings
