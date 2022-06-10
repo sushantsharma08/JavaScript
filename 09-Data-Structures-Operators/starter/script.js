@@ -29,8 +29,8 @@ const restaurant = {
   order : function (starterIndex, mainIndex){
       return [this.starterMenu[starterIndex] , this.mainMenu[mainIndex]];
   },
-  orderDelivery : function (obj){
-    console.log(obj);
+  orderDelivery : function ({starterIndex=1,mainIndex=0,time,address}){
+    console.log(`order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} at ${time}. will be delivering soon to ${address}.  Thamkyou for ordering.`);
   }
 };
 
@@ -39,6 +39,10 @@ restaurant.orderDelivery({
   address : "22 ab road",
   mainIndex:2,
   starterIndex:2,
+});
+restaurant.orderDelivery({
+  address:'mandir ke aage',
+  time:'22:30',
 });
 
 // array desructuring
@@ -87,7 +91,7 @@ console.log(l,m);
 // getting opening times on friday for the restraunt
 
 const {
-  fri : {open ,close}
+  fri : {open:o,close:c}
 } =   openingHours;
 
-console.log(open, close);
+console.log(o, c);
