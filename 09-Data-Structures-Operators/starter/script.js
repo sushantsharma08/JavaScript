@@ -125,3 +125,20 @@ prompt('let\'s make pasta! ingredient 3 ?')];
 
 //orderpasta  ---->>>>
 restaurant.orderPasta(...ingredients);
+
+
+
+// sets
+
+let orderSet= new Set(['hello', 'tetsing']);
+
+orderSet.add(2);
+console.log(orderSet.has(2));
+console.log(orderSet.has(3));
+orderSet.delete(2);
+console.log(orderSet);
+  
+// for(let item of orderSet){
+//   console.log(item);
+// }
+
