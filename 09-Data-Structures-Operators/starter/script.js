@@ -26,86 +26,102 @@ const restaurant = {
       close: 24,
     },
   },
-  order : function (starterIndex, mainIndex){
-      return [this.starterMenu[starterIndex] , this.mainMenu[mainIndex]];
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
-  orderDelivery : function ({starterIndex=1,mainIndex=0,time,address}){
+  orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time, address }) {
     console.log(`order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} at ${time}. will be delivering soon to ${address}.  Thamkyou for ordering.`);
+  },
+
+  orderPasta : function(ing1 , ing2 , ing3){
+    console.log(`heres your pasta with ${ing1}, ${ing2} and ${ing3}`)
   }
 };
 
 restaurant.orderDelivery({
   time: '22:30',
-  address : "22 ab road",
-  mainIndex:2,
-  starterIndex:2,
+  address: "22 ab road",
+  mainIndex: 2,
+  starterIndex: 2,
 });
 restaurant.orderDelivery({
-  address:'mandir ke aage',
-  time:'22:30',
+  address: 'mandir ke aage',
+  time: '22:30',
 });
 
 // array desructuring
- const arr = [2,3,4];
- const [x,y,z] = arr;
+const arr = [2, 3, 4];
+const [x, y, z] = arr;
 
- console.log(x, y, z);
+console.log(x, y, z);
 
 //  skipping a element in btw
- let [a, ,b] = arr;
- console.log(a,b);
+let [a, , b] = arr;
+console.log(a, b);
 
 //  switching values 
 [a, b] = [b, a];
-console.log(a,b);
+console.log(a, b);
 
 // object destructuring
 
 
 // calling objects meathods
-const {name ,categories, openingHours}= restaurant;
-console.log(name,categories, openingHours);
+const { name, categories, openingHours } = restaurant;
+console.log(name, categories, openingHours);
 
-const{
-  name : restrauntname,
-  categories : tag,
+const {
+  name: restrauntname,
+  categories: tag,
   openingHours: hours,
 } = restaurant;
 
-console.log(restrauntname , tag , hours);
+console.log(restrauntname, tag, hours);
 
 // providing with default data
 // when data is not hard coded
-const{menu = [] , starterMenu : starters =[]} = restaurant;
-console.log(menu , starters);
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
 
 //mutating variables
 let l = 10;
 let m = 20;
-const obj = {l:40 , m:90, n:35};
+const obj = { l: 40, m: 90, n: 35 };
 
-({l,m}=obj);
-console.log(l,m);
+({ l, m } = obj);
+console.log(l, m);
 
 // nested objects
 // getting opening times on friday for the restraunt
 
 const {
-  fri : {open:o,close:c}
-} =   openingHours;
+  fri: { open: o, close: c }
+} = openingHours;
 
 console.log(o, c);
 
 // SPREAD operator (...)
 
-const array1 = [1,2,3,4,5,6];
-const array2 = [7,8,9,0];
+const array1 = [1, 2, 3, 4, 5, 6];
+const array2 = [7, 8, 9, 0];
 console.log(...array1);
-const modifiedArray = [...array1 , 7];
+const modifiedArray = [...array1, 7];
 console.log(modifiedArray);
-const addedArray = [...array1 , ...array2];
+const addedArray = [...array1, ...array2];
 console.log(addedArray);
 
 const str = "Sushant";
 console.log(str);  //printing string
 console.log(...str); // printing elements of strings
+
+// challange 
+
+const main = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(main);
+
+const ingredients = [prompt('let\'s make pasta! ingredient 1 ?'),
+prompt('let\'s make pasta! ingredient 2 ?'),
+prompt('let\'s make pasta! ingredient 3 ?')];
+
+//orderpasta  ---->>>>
+restaurant.orderPasta(...ingredients);
