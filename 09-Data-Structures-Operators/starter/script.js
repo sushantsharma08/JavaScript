@@ -142,3 +142,8 @@ console.log(orderSet);
 //   console.log(item);
 // }
 
+
+// rest
+
+const [q,p,...others] = [1,2,3,4,5,6];
+console.log(q,p,others);
