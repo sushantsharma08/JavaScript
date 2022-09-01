@@ -147,3 +147,8 @@ console.log(orderSet);
 
 const [q,p,...others] = [1,2,3,4,5,6];
 console.log(q,p,others);
+
+
+
+// short circuiting : 
+console.log(undefined|| ""|| 0 || "hello");
