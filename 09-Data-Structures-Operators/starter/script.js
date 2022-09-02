@@ -119,12 +119,11 @@ console.log(...str); // printing elements of strings
 const main = [...restaurant.mainMenu, ...restaurant.starterMenu];
 console.log(main);
 
-const ingredients = [prompt('let\'s make pasta! ingredient 1 ?'),
-prompt('let\'s make pasta! ingredient 2 ?'),
-prompt('let\'s make pasta! ingredient 3 ?')];
+// 
+
 
 //orderpasta  ---->>>>
-restaurant.orderPasta(...ingredients);
+// restaurant.orderPasta(...ingredients);
 
 
 
@@ -151,4 +150,19 @@ console.log(q,p,others);
 
 
 // short circuiting : 
+
+
+//OR
 console.log(undefined|| ""|| 0 || "hello");
+
+let isPresent = true;
+let count=0
+let attendance = isPresent? count+1: count;
+console.log(attendance);
+
+attendance = count+1||count;
+console.log(attendance);
+
+
+console.log("------X- AND -X-------");
+
