@@ -175,3 +175,11 @@ if (isTrue) {
 
 
 console.log(isTrue&&isTrue+10);
+
+
+//nullish operator
+
+
+console.log("------X- Nullish -X-------");
+console.log(count??++count);
+console.log(null??count);
