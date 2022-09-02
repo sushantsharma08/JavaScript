@@ -166,3 +166,12 @@ console.log(attendance);
 
 console.log("------X- AND -X-------");
 
+let isTrue=0;
+
+if (isTrue) {
+  isTrue+10;
+  console.log(isTrue);
+}
+
+
+console.log(isTrue&&isTrue+10);
