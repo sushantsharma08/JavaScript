@@ -176,6 +176,8 @@ if (isTrue) {
 
 console.log(isTrue&&isTrue+10);
 
+console.log(count&& null);
+
 
 //nullish operator
 
@@ -183,3 +185,11 @@ console.log(isTrue&&isTrue+10);
 console.log("------X- Nullish -X-------");
 console.log(count??++count);
 console.log(null??count);
+
+console.log("------X- FOR-OF lOOP -X-------");
+
+const names=['sushant','sparsh','mohit' ,'utkarsh']
+
+for(let item of names.entries()){
+  console.log(item[0]+1+ ":" +item[1]);
+}
