@@ -193,3 +193,17 @@ const names=['sushant','sparsh','mohit' ,'utkarsh']
 for(let item of names.entries()){
   console.log(item[0]+1+ ":" +item[1]);
 }
+
+//enhanced object literals
+
+const jobsvailable={
+  software : "Software Engineers",
+}
+
+const company = {
+  name: "hellBound",
+  profits: 260,
+  // postsSoftware:jobsvailable
+  jobsvailable
+}
+console.log(company);
