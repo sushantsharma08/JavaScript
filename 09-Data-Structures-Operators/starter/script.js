@@ -207,3 +207,7 @@ const company = {
   jobsvailable
 }
 console.log(company);
+
+for (const name of names) {
+  console.log(name);
+}
