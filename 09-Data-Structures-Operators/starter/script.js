@@ -216,6 +216,13 @@ for (const name of names) {
 if(restaurant.openingHours.mon){
   console.log(restaurant.openingHours.mon.open);
 }
-if(restaurant.openingHours.fri){
-  console.log(restaurant.openingHours.fri.open);
+
+console.log(restaurant.openingHours?.mon?.open)
+
+
+const days = ['mon','tue','wed','thu','fri','sat','sun'];
+
+for(const day of days){
+  const open = restaurant.openingHours[day]?.open;
+  console.log(`on ${day}, we open at ${open}`);
 }
