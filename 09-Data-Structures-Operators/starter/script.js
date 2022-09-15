@@ -211,3 +211,11 @@ console.log(company);
 for (const name of names) {
   console.log(name);
 }
+
+
+if(restaurant.openingHours.mon){
+  console.log(restaurant.openingHours.mon.open);
+}
+if(restaurant.openingHours.fri){
+  console.log(restaurant.openingHours.fri.open);
+}
