@@ -232,3 +232,7 @@ for(const day of Object.keys(openingHours)){
 console.log(Object.keys(restaurant));
 console.log(Object.values(restaurant));
 console.log(Object.entries(restaurant));
+
+for(const [key , {open,close}] of Object.entries(openingHours)){
+  console.log(`on ${key} we open at ${open} and close at ${close}` );
+}
