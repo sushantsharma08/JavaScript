@@ -226,3 +226,9 @@ for(const day of days){
   const open = restaurant.openingHours[day]?.open ?? 'closed' ;
   console.log(`on ${day}, we open at ${open}`);
 }
+for(const day of Object.keys(openingHours)){
+  console.log(day);
+}
+console.log(Object.keys(restaurant));
+console.log(Object.values(restaurant));
+console.log(Object.entries(restaurant));
