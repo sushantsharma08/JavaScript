@@ -123,7 +123,7 @@ console.log(main);
 
 
 //orderpasta  ---->>>>
-// restaurant.orderPasta(...ingredients);
+restaurant.orderPasta(...ingredients);
 
 
 
