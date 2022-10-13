@@ -188,29 +188,29 @@
 
 // console.log("------X- FOR-OF lOOP -X-------");
 
-// const names=['sushant','sparsh','mohit' ,'utkarsh']
+const names=['sushant','sparsh','mohit' ,'utkarsh']
 
-// for(let item of names.entries()){
-//   console.log(item[0]+1+ ":" +item[1]);
-// }
+for(let item of names.entries()){
+  console.log(item[0]+1+ ":" +item[1]);
+}
 
-// //enhanced object literals
+//enhanced object literals
 
-// const jobsvailable={
-//   software : "Software Engineers",
-// }
+const jobsvailable={
+  software : "Software Engineers",
+}
 
-// const company = {
-//   name: "hellBound",
-//   profits: 260,
-//   // postsSoftware:jobsvailable
-//   jobsvailable
-// }
-// console.log(company);
+const company = {
+  name: "hellBound",
+  profits: 260,
+  // postsSoftware:jobsvailable
+  jobsvailable
+}
+console.log(company);
 
-// for (const name of names) {
-//   console.log(name);
-// }
+for (const name of names) {
+  console.log(name);
+}
 
 
 // if(restaurant.openingHours.mon){
