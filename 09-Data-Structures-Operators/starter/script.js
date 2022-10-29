@@ -316,6 +316,6 @@ for (const [i,players] of game.scored.entries()) {
 }
 console.log(game.scored.entries());
 
-for (const odd of game.odds.values(odds)) {
+for (const odd of game.odds.values()) {
   console.log(odd);
 }
