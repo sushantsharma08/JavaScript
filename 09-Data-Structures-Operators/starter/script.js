@@ -239,6 +239,7 @@ for (const name of names) {
 
 
 // _____________________challange1_________________________________
+console.log(`_____________________challange1_________________________________`);
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -297,7 +298,7 @@ const players1Final=[...players1,'thiago','Coutinho','perisic']
 console.log(players1Final);
 const {team1,x:draw,team2}=game.odds
 console.log(team1,draw,team2);
- 
+
 const printgoals = function(...players){
   console.log(players.length + ' ' + 'goals were scored');
   for (const name of players) {
@@ -306,3 +307,15 @@ const printgoals = function(...players){
 }
 printgoals('Lewandowski', 'Gnarby', 'Lewandowski',
 'Hummels');
+
+// _____________________challange1_________________________________
+ console.log(`_____________________challange2_________________________________`);
+
+for (const [i,players] of game.scored.entries()) {
+  console.log(`Goal ${i+1}: ${players} `);
+}
+console.log(game.scored.entries());
+
+for (const odd of game.odds.values(odds)) {
+  console.log(odd);
+}
