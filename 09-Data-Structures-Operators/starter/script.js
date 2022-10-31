@@ -314,8 +314,15 @@ printgoals('Lewandowski', 'Gnarby', 'Lewandowski',
 for (const [i,players] of game.scored.entries()) {
   console.log(`Goal ${i+1}: ${players} `);
 }
-console.log(game.scored.entries());
 
-for (const odd of game.odds.values()) {
-  console.log(odd);
+let totalodd=0;
+
+for (const [team,odd] of Object.entries(game.odds)) {
+  console.log(` ${team} has, ${odd} odds`);
+  totalodd = totalodd+odd;
 }
+console.log(game.team1);
+const avg= totalodd/3
+console.log(avg);
+
+console.log(`________________________________________SETS____________________________________________________`);
