@@ -326,3 +326,15 @@ const avg= totalodd/3
 console.log(avg);
 
 console.log(`________________________________________SETS____________________________________________________`);
+
+const thisset = new Set(['hello','hi','hello','hi','hello','hi']);
+console.log(thisset);
+
+console.log(thisset.has('newstring'));
+console.log(thisset);
+thisset.add('newstring');
+console.log(thisset);
+console.log(thisset.has('newstring'));
+thisset.delete('hi');
+console.log(thisset);
+console.log(thisset.has('hi'));
