@@ -338,3 +338,8 @@ console.log(thisset.has('newstring'));
 thisset.delete('hi');
 console.log(thisset);
 console.log(thisset.has('hi'));
+
+let arraytest = [1,2,3,4,5,5,4,3,2,1];
+// const arrayset=arraytest.Set();
+const arrayset = new Set(arraytest)
+console.log(arrayset);
