@@ -361,3 +361,7 @@ console.log(rest.get('name'));
 rest.set(3,"roti")
 .set(4,'loki');
 console.log(rest);
+console.log(rest.has('name'));
+rest.delete(3)
+console.log(rest);
+console.log(rest.size);
