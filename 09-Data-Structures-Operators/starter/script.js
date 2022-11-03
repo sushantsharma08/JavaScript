@@ -349,3 +349,15 @@ for(const item of arrayset){
   console.log(item);
   settoArray.push(item);
 }console.log(settoArray);
+
+console.log(`________________________________________Maps____________________________________________________`);
+const rest = new Map();
+rest.set('name',"shabnam da dhabaa");
+rest.set(1,"paneer");
+rest.set(2,"daal");
+console.log(rest);
+console.log(rest.get('name'));
+
+rest.set(3,"roti")
+.set(4,'loki');
+console.log(rest);
