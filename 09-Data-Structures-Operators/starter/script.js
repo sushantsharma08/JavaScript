@@ -188,16 +188,16 @@
 
 // console.log("------X- FOR-OF lOOP -X-------");
 
-const names=['sushant','sparsh','mohit' ,'utkarsh']
+const names = ['sushant', 'sparsh', 'mohit', 'utkarsh']
 
-for(let item of names.entries()){
-  console.log(item[0]+1+ ":" +item[1]);
+for (let item of names.entries()) {
+  console.log(item[0] + 1 + ":" + item[1]);
 }
 
 //enhanced object literals
 
-const jobsvailable={
-  software : "Software Engineers",
+const jobsvailable = {
+  software: "Software Engineers",
 }
 
 const company = {
@@ -282,52 +282,52 @@ const game = {
   },
 };
 
-const [players1,players2] = game.players
-console.log(players1, players2 );
-const [gk1,...feildPlayers1]=players1
+const [players1, players2] = game.players
+console.log(players1, players2);
+const [gk1, ...feildPlayers1] = players1
 console.log(`Team 1 : 
 goalkeeper : ${gk1},
 feildPlayers : ${feildPlayers1}`);
-const [gk2,...feildPlayers2]=players2
+const [gk2, ...feildPlayers2] = players2
 console.log(`Team 2 : 
 goalkeeper : ${gk2},
 feildPlayers : ${feildPlayers2}`);
-const allPlayers = [...players1,...players2]
+const allPlayers = [...players1, ...players2]
 console.log(allPlayers)
-const players1Final=[...players1,'thiago','Coutinho','perisic']
+const players1Final = [...players1, 'thiago', 'Coutinho', 'perisic']
 console.log(players1Final);
-const {team1,x:draw,team2}=game.odds
-console.log(team1,draw,team2);
+const { team1, x: draw, team2 } = game.odds
+console.log(team1, draw, team2);
 
-const printgoals = function(...players){
+const printgoals = function (...players) {
   console.log(players.length + ' ' + 'goals were scored');
   for (const name of players) {
     console.log(name);
   }
 }
 printgoals('Lewandowski', 'Gnarby', 'Lewandowski',
-'Hummels');
+  'Hummels');
 
 // _____________________challange1_________________________________
- console.log(`_____________________challange2_________________________________`);
+console.log(`_____________________challange2_________________________________`);
 
-for (const [i,players] of game.scored.entries()) {
-  console.log(`Goal ${i+1}: ${players} `);
+for (const [i, players] of game.scored.entries()) {
+  console.log(`Goal ${i + 1}: ${players} `);
 }
 
-let totalodd=0;
+let totalodd = 0;
 
-for (const [team,odd] of Object.entries(game.odds)) {
+for (const [team, odd] of Object.entries(game.odds)) {
   console.log(` ${team} has, ${odd} odds`);
-  totalodd = totalodd+odd;
+  totalodd = totalodd + odd;
 }
 console.log(game.team1);
-const avg= totalodd/3
+const avg = totalodd / 3
 console.log(avg);
 
 console.log(`________________________________________SETS____________________________________________________`);
 
-const thisset = new Set(['hello','hi','hello','hi','hello','hi']);
+const thisset = new Set(['hello', 'hi', 'hello', 'hi', 'hello', 'hi']);
 console.log(thisset);
 
 console.log(thisset.has('newstring'));
@@ -339,29 +339,35 @@ thisset.delete('hi');
 console.log(thisset);
 console.log(thisset.has('hi'));
 
-let arraytest = [1,2,3,4,5,5,4,3,2,1];
+let arraytest = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1];
 // const arrayset=arraytest.Set();
 const arrayset = new Set(arraytest)
 console.log(arrayset);
 
-const settoArray=[];
-for(const item of arrayset){
+const settoArray = [];
+for (const item of arrayset) {
   console.log(item);
   settoArray.push(item);
-}console.log(settoArray);
+} console.log(settoArray);
 
 console.log(`________________________________________Maps____________________________________________________`);
 const rest = new Map();
-rest.set('name',"shabnam da dhabaa");
-rest.set(1,"paneer");
-rest.set(2,"daal");
+rest.set('name', "shabnam da dhabaa");
+rest.set(1, "paneer");
+rest.set(2, "daal");
+rest.set('open',11).set('closed',23);
+rest.set(true,"we are open").set(false,"we are closed");
 console.log(rest);
 console.log(rest.get('name'));
 
-rest.set(3,"roti")
-.set(4,'loki');
+rest.set(3, "roti")
+  .set(4, 'loki');
 console.log(rest);
 console.log(rest.has('name'));
 rest.delete(3)
 console.log(rest);
 console.log(rest.size);
+
+const time = 21;
+console.log(rest.get(time>=rest.get('open')&& time<=rest.get('closed')));
+
