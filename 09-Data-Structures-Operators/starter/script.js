@@ -355,8 +355,8 @@ const rest = new Map();
 rest.set('name', "shabnam da dhabaa");
 rest.set(1, "paneer");
 rest.set(2, "daal");
-rest.set('open',11).set('closed',23);
-rest.set(true,"we are open").set(false,"we are closed");
+rest.set('open', 11).set('closed', 23);
+rest.set(true, "we are open").set(false, "we are closed");
 console.log(rest);
 console.log(rest.get('name'));
 
@@ -369,5 +369,7 @@ console.log(rest);
 console.log(rest.size);
 
 const time = 21;
-console.log(rest.get(time>=rest.get('open')&& time<=rest.get('closed')));
+console.log(rest.get(time >= rest.get('open') && time <= rest.get('closed')));
 
+console.log(rest.has('name'));
+rest.delete(2);
