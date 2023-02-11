@@ -387,7 +387,7 @@ for (let i = 0; i < strToCheck.length; i++) {
   allAlpha[strToCheck[i]]++
 }
 // converting an object to a map
-const alphaMap= Object.entries(allAlpha);
+const alphaMap= new Map( Object.entries(allAlpha));
 console.log(alphaMap);
 
 console.log(allAlpha);
