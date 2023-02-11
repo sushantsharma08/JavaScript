@@ -378,16 +378,28 @@ console.log(rest);
 console.log("_____________________Check for occurances of alphabets in a String_____________________");
 
 const allAlpha = {
-  a: 0, b: 0, c: 0, d: 0, e: 0, f: 0, g: 0, h: 0, i: 0, j: 0, k: 0, l: 0, m: 0, n: 0, o: 0, p: 0, q: 0, r: 0, s: 0, t: 0, u: 0, v: 0, w: 0, x: 0, y: 0, z: 0, " ":0
+  a: 0, b: 0, c: 0, d: 0, e: 0, f: 0, g: 0, h: 0, i: 0, j: 0, k: 0, l: 0, m: 0, n: 0, o: 0, p: 0, q: 0, r: 0, s: 0, t: 0, u: 0, v: 0, w: 0, x: 0, y: 0, z: 0, " ": 0
 }
 
-const strToCheck = "abcdefghijklmnopqrstuvwxyz";
+const strToCheck = "abcd";
 
 for (let i = 0; i < strToCheck.length; i++) {
   allAlpha[strToCheck[i]]++
 }
-// converting an object to a map
-const alphaMap= new Map( Object.entries(allAlpha));
-console.log(alphaMap);
 
-console.log(allAlpha);
+
+// converting an object to a map
+// doing same thing with maps
+const alphaMap = new Map(Object.entries(allAlpha));
+
+for (let [key, value] of alphaMap) {
+  for (let i = 0; i < strToCheck.length; i++) {
+    if (key===strToCheck[i]) {
+      value++
+    }
+  }
+  alphaMap.set(key, value);
+}
+
+console.log(alphaMap);
+console.log(allAlpha); 
