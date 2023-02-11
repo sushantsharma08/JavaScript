@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // // Data needed for a later exercise
 // const flights =
@@ -381,7 +381,8 @@ const allAlpha = {
   a: 0, b: 0, c: 0, d: 0, e: 0, f: 0, g: 0, h: 0, i: 0, j: 0, k: 0, l: 0, m: 0, n: 0, o: 0, p: 0, q: 0, r: 0, s: 0, t: 0, u: 0, v: 0, w: 0, x: 0, y: 0, z: 0, " ": 0
 }
 
-const strToCheck = "abcd";
+let strToCheck = "abcdABCD";
+strToCheck = strToCheck.toLowerCase();
 
 for (let i = 0; i < strToCheck.length; i++) {
   allAlpha[strToCheck[i]]++
@@ -393,8 +394,9 @@ for (let i = 0; i < strToCheck.length; i++) {
 const alphaMap = new Map(Object.entries(allAlpha));
 
 for (let [key, value] of alphaMap) {
+  value=0
   for (let i = 0; i < strToCheck.length; i++) {
-    if (key===strToCheck[i]) {
+    if (key === strToCheck[i]) {
       value++
     }
   }
@@ -403,3 +405,8 @@ for (let [key, value] of alphaMap) {
 
 console.log(alphaMap);
 console.log(allAlpha); 
+
+var pattern = /[a-zA-Z]/g;
+let result= strToCheck.match(pattern)
+// const map2 = new Map(result)
+console.log(result);
