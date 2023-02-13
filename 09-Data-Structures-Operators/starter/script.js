@@ -435,3 +435,10 @@ for (let i = 0; i < langs.length; i++) {
 // console.log(givenString.indexOf('you'));
 // const removegreeting = givenString.slice(5) 
 // console.log(removegreeting.trim());
+
+let str2 = 'SushAnt';
+let strnew=str2.toLowerCase(); 
+console.log(strnew.charAt(0).toUpperCase()+strnew.slice(1));
+
+let arraytoStr=['hello','javascript','howz','it']
+console.log(arraytoStr.join('*'));
