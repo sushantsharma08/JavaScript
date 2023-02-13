@@ -421,3 +421,17 @@ let alphabets = result.reduce(
   },''
 )
 console.log(alphabets);
+let langs=['js','py']
+
+console.log("_____________________Strings_____________________");
+
+for (let i = 0; i < langs.length; i++) {
+  let givenString  = `hello ${langs[i]} how are you `;
+// extracting lang name
+  console.log(givenString.slice(givenString.indexOf(' '), givenString.indexOf('how')));
+  
+}
+
+// console.log(givenString.indexOf('you'));
+// const removegreeting = givenString.slice(5) 
+// console.log(removegreeting.trim());
