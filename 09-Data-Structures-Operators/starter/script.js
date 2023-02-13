@@ -406,7 +406,18 @@ for (let [key, value] of alphaMap) {
 console.log(alphaMap);
 console.log(allAlpha); 
 
+// reducing time and space complexity
+
 var pattern = /[a-zA-Z]/g;
 let result= strToCheck.match(pattern)
 // const map2 = new Map(result)
 console.log(result);
+
+let alphabets = result.reduce(
+  (acc,current)=>{
+    console.log(typeof acc);
+   return acc+current
+    
+  },''
+)
+console.log(alphabets);
