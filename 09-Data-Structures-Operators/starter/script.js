@@ -442,3 +442,5 @@ console.log(strnew.charAt(0).toUpperCase()+strnew.slice(1));
 
 let arraytoStr=['hello','javascript','howz','it']
 console.log(arraytoStr.join('*'));
+
+
